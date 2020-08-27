@@ -4,7 +4,7 @@
  * @Author: 范钊
  * @Date: 2020-08-24 19:31:33
  * @LastEditors: 范钊
- * @LastEditTime: 2020-08-26 11:47:45
+ * @LastEditTime: 2020-08-27 20:35:55
  */
  //获取用户名显示到页面
  function load_data(){
@@ -236,4 +236,18 @@ $(".clear").click(function(){
   $(".caiZhi li").css("background","none");
   $(".yjColor li").css("background","none");
   $(".jingPian li").css("background","none");
+})
+$(document).ready(function(){
+  let user_id=localStorage.getItem("user_id")
+  $.ajax({
+    type: "GET",
+    url: "../php/gwnum.php",
+    data: "&Userid="+user_id,
+    success: function(msg){
+      let arr = JSON.parse(msg);
+      for(let i=0;i<arr.length;i++){
+        $(".num").html(arr.length);
+      }
+    }
+  })
 })

@@ -4,7 +4,7 @@
  * @Author: 范钊
  * @Date: 2020-08-25 16:37:58
  * @LastEditors: 范钊
- * @LastEditTime: 2020-08-27 16:37:55
+ * @LastEditTime: 2020-08-27 20:35:39
  */
 function load_data(){
   var user=localStorage.getItem("username");
@@ -227,4 +227,17 @@ $(".addGwc").click(imgSrc,function(){
    });
   }
 })
-
+$(document).ready(function(){
+  let user_id=localStorage.getItem("user_id")
+  $.ajax({
+    type: "GET",
+    url: "../php/gwnum.php",
+    data: "&Userid="+user_id,
+    success: function(msg){
+      let arr = JSON.parse(msg);
+      for(let i=0;i<arr.length;i++){
+        $(".num").html(arr.length);
+      }
+    }
+  })
+})

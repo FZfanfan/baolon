@@ -4,7 +4,7 @@
  * @Author: 范钊
  * @Date: 2020-08-25 16:37:58
  * @LastEditors: 范钊
- * @LastEditTime: 2020-08-27 16:34:36
+ * @LastEditTime: 2020-08-27 20:39:38
  */
 function load_data(){
   var user=localStorage.getItem("username");
@@ -139,7 +139,8 @@ $(document).ready(function(){
       }else{
         let arr = JSON.parse(msg);
         for(let i=0;i<arr.length;i++){
-          $(".gwcshu").html(i);
+          $(".gwcshu").html(arr.length);
+          $(".num").html(arr.length);
           let GWCxinXi=
           `
           <div class="cart">
