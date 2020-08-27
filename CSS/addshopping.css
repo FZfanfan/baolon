@@ -1,0 +1,521 @@
+*{
+  padding:0;
+  margin:0;
+}
+.backTop{
+  width: 40px;
+  height: 100px;
+  position:fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 111;
+  background:#F4F4F4;
+}
+.backTop p:nth-child(1){
+  width: 40px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  color:gray;
+}
+.upper{
+  width: 40px;
+  height: 50px;
+  text-align: center;
+  line-height:50px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  color:gray;
+  font-size: 20px;
+}
+/* --------------------------- */
+.headerBox{
+  height: 42px;
+  width: 100%;
+  min-width: 800px;
+  /* line-height: 42px; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  font-size: 18px;
+  background: #fff;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+}
+.leftCon{
+  width: 230px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 5px;
+  font-size:14px;
+}
+.leftCon li{
+  list-style: none;
+  display:block;
+  float: left; 
+}
+.rightCon{
+  width: 250px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5px;
+  font-size:14px;
+}
+.rightCon a{
+  text-decoration: none;
+}
+.rightCon li{
+  list-style: none;
+  display:block;
+  float: left; 
+  position: relative;
+}
+.rightCon .icon-suo{
+  font-size:25px;
+  cursor: pointer;
+}
+.rightCon .num{
+  display:block;
+  width: 15px;
+  height: 15px;
+  font-size:15px;
+  position:absolute;
+  bottom:5px;
+  left: 20px;
+}
+.rightCon .icon-search{
+  font-size:20px;
+}
+/* --------------------------------------------- */
+/* 购物车弹出框 */
+.gwc{
+  position:absolute;
+  top:30px;
+  right: 60px;
+  z-index: 111;
+  display:none;
+}
+.box{
+  position: relative;
+  padding-top: 8px;
+}
+.con{
+  width:300px;
+  height: 155px;
+  border: 1px #F4F4F4 solid;
+  border-radius: 3px;
+  background-color: #F4F4F4;
+}
+.con h3{
+  margin-top:30px;
+  text-align: center;
+  font-weight: normal;
+}
+.gwcBut{
+  width: 260px;
+  height: 46px;
+  border: 2px solid black;
+  font-size: 16px;
+  margin-top:20px;
+  margin-left: 20px;
+}
+.con-ret{
+  border: 7px solid transparent;
+  border-bottom-color:#F4F4F4; 
+  position: absolute;
+  right: 40px;
+  top:-6px;
+}
+/* -------------------------------------------------- */
+/* 退出登录 */
+.exitLoginBox{
+  position: absolute;
+  top: 37px;
+  right: 107px;
+  width: 130px;
+  height: 100px;
+  line-height:100px;
+  text-align: center;
+  background:#F4F4F4;
+  display:none;
+}
+.exitLogin{
+  line-height:30px;
+  width: 120px;
+  height: 30px;
+  outline: none;
+  border: 2px solid black;
+}
+/* ---------------------------------------------------------- */
+.logoBox{
+  margin-top:45px;
+  width:100%;
+  text-align: center;
+}
+.logoBox img{
+  width: 175px;
+}
+/* ------------------------------------------------------------- */
+.navBox{
+  width: 100%;
+  height: 45px;
+  display:flex;
+  justify-content: center;
+}
+.nav{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav li{
+  height: 45px;
+  line-height: 45px;
+  display:block;
+  float:left;
+  margin:0 30px;
+  box-sizing: border-box;
+}
+/* ---------------------------------------------------------------- */
+.optionBoX{
+  width: 95%;
+  background:rgba(247,247,247,0.97);
+  margin:0 auto;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  padding:20px 0px 5px 0px;
+  display:none;
+  z-index: 111;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size:14px;
+}
+.option{
+  width: 90%;
+}
+.optionOul{
+  width:58%;
+  height: 100%;
+  display:flex;
+  align-items: middle;
+  justify-content:space-around;
+  float: left;
+}
+.optionOul li{
+  list-style: none;
+  display:block;
+  float: left;
+}
+.optionOul p{
+  margin-top:20px;
+}
+.imgBox{
+  width: 38%;
+  float: right;
+}
+.imgBox img{
+  width: 100%;
+  height: 100%;
+}
+/* ----------------------------------- */
+.detailsBox{
+  width: 100%;
+}
+.details{
+  width:85%;
+  margin:0 auto;
+}
+.detailsTop{
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+.magnifierBox{
+  width: 100%;
+  overflow: hidden;
+}
+.magnifierleft{
+  width: 50%;
+  height: 400px;
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+}
+/* ------------- */
+#small{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+#small img{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+}
+#mask{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: none;
+  background-color:red;
+  opacity: 0.5;
+}
+#big{
+  width: 450px;
+  height: 450px;
+  position: absolute;
+  top:0px;
+  left:550px;
+  display:none;
+  overflow: hidden;
+  z-index: 10;
+}
+#big img{
+  width: 900px;
+  height: 900px;
+  position: absolute;
+}
+/* ---------------------------- */
+.magnifierright{
+  width: 40%;
+  float: left;
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+.bl{
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  font-family: apa,"Microsoft YaHei";
+  font-weight: normal;
+}
+.jkBox,.jPBox{
+  width: 100%;
+  margin-top: 20px;
+  font-weight: normal;
+}
+.jkBox h3,.jPBox h3{
+  font-weight: normal;
+}
+.flImgBox{
+  width: 100%;
+  margin-top: 20px; 
+}
+.flImg{
+  width:50%;
+  display:flex;
+  flex-wrap: wrap;
+  margin-top:10px;
+}
+.flImg li{
+  width: 30%;
+  height: 8%;
+  list-style: none;
+  box-sizing: border-box;
+}
+.smallYJ{
+  border: 1px solid gray;
+}
+.flImg img{
+  width: 100%;
+  height: 100%;
+}
+.heji{
+  width: 100%;
+  margin-top: 30px;
+}
+.rmb{
+  width: 100%;
+  height: 28px;
+  padding-top:10px;
+  font-size: 28px;
+  line-height: 28px;
+  font-family: apa,"Microsoft YaHei";
+}
+/* -------------------------------- */
+.detailsbottom{
+  width: 100%;
+  overflow: hidden;
+}
+.addGwc{
+  width: 240px;
+  height: 50px;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 15px;
+  margin-top: 10px;
+  border: none;
+  float: right;
+  margin-right: 225px;
+}
+.xialaBox{
+  clear: right;
+  width: 240px;
+  float: right;
+  margin-right: 225px;
+}
+.liNian,.caizhi,.canshu{
+  height: 40px;
+  position: relative;
+}
+.xialaBox h3{
+  font-weight: normal;
+  font-size: 14px;
+  line-height:40px
+}
+.icon-xiala2{
+  position:absolute;
+  top:12px;
+  right: 0px;
+}
+.icon-toTop{
+  position:absolute;
+  top:12px;
+  right: 0px;
+  display:none;
+}
+.liNianX{
+  width: 100%;
+  font-size: 14px;
+  height: 20px;
+  line-height:20px;
+  display:none;
+}
+.caizhiX{
+  width: 100%;
+  font-size: 14px;
+  height: 40px;
+  display:none;
+}
+.canshuX{
+  width: 100%;
+  font-size: 14px;
+  height: 60px;
+  display:none;
+}
+/* ------------------------ */
+.iconBox{
+  width: 100%;
+  overflow: hidden;
+  margin-top:50px;
+  margin-bottom: 100px;
+}
+.icon{
+  width: 240px;
+  display:flex;
+  align-items: center;
+  margin-right: 225px;
+  float: right;
+}
+.icon .icon-weixin-footer,.icon .icon-weibo{
+  font-size: 40px;
+  color:#C6B99E;
+  margin-right: 20px;
+}
+/* ---------------------------------------------- */
+.footerBox{
+  width:100%;
+  height: 335px;
+  background:#ededed;
+  display:flex;
+  justify-content:center;
+}
+.foot{
+  width: 85%;
+  height: 280px;
+  margin-top:55px;
+  display:flex;
+  justify-content:space-between;
+}
+.footleft{
+  width: 62%;
+  height: 280px;
+  border-right: 1px solid gray;
+  position: relative;
+}
+.leftUl{
+  width: 100%;
+  display:flex;
+  justify-content:space-around;
+}
+.leftUl li{
+  list-style: none;
+  display: inline-block;
+}
+.leftUl h3{
+  color:#000;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.leftUl p{
+  height:30px;
+  font-size: 12px;
+  line-height: 30px;
+  color:#5a5a5a;
+}
+.Copyright{
+  font-size: 12px;
+  line-height: 30px;
+  color:#5a5a5a;
+  position:absolute;
+  bottom:20px;
+  left: 80px;
+}
+/* ---------------------------- */
+.footright{
+  width: 38%;
+  height: 280px;
+  display: flex;
+  justify-content:center;
+}
+.rightBox{
+  width: 250px;
+}
+.exclusive{
+  margin-top:30px;
+}
+.dingyue p,.exclusive p{
+  font-size: 15px;
+  color: #333;
+  line-height: 30px;
+  width: 100%;
+  font-family: h60s,"Microsoft YaHei";
+}
+.Oinput,.exclusiveInput{
+  width: 250px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:10px;
+}
+.Oinput input,.exclusiveInput input{
+  width: 220px;
+  height: 30px;
+  background:#d9d9d9;
+  outline-style: none;
+  border: none;
+}
+.Oinput a,.exclusiveInput a{
+  display:block;
+  width: 30px;
+  height: 30px;
+  background:#BABABA;
+  font-size: 20px;
+  text-align:center;
+  line-height:30px;
+  font-weight: bolder;
+}

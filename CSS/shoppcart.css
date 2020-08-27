@@ -1,0 +1,465 @@
+*{
+  padding:0;
+  margin:0;
+}
+.backTop{
+  width: 40px;
+  height: 100px;
+  position:fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 111;
+  background:#F4F4F4;
+}
+.backTop p:nth-child(1){
+  width: 40px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  color:gray;
+}
+.upper{
+  width: 40px;
+  height: 50px;
+  text-align: center;
+  line-height:50px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  color:gray;
+  font-size: 20px;
+}
+/* --------------------------- */
+.headerBox{
+  height: 42px;
+  width: 100%;
+  min-width: 800px;
+  /* line-height: 42px; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  font-size: 18px;
+  background: #fff;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+}
+.leftCon{
+  width: 230px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 5px;
+  font-size:14px;
+}
+.leftCon li{
+  list-style: none;
+  display:block;
+  float: left; 
+}
+.rightCon{
+  width: 250px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 5px;
+  font-size:14px;
+}
+.rightCon a{
+  text-decoration: none;
+}
+.rightCon li{
+  list-style: none;
+  display:block;
+  float: left; 
+  position: relative;
+}
+.rightCon .icon-suo{
+  font-size:25px;
+  cursor: pointer;
+}
+.rightCon .num{
+  display:block;
+  width: 15px;
+  height: 15px;
+  font-size:15px;
+  position:absolute;
+  bottom:5px;
+  left: 20px;
+}
+.rightCon .icon-search{
+  font-size:20px;
+}
+/* --------------------------------------------- */
+/* 购物车弹出框 */
+.gwc{
+  position:absolute;
+  top:30px;
+  right: 60px;
+  z-index: 111;
+  display:none;
+}
+.box{
+  position: relative;
+  padding-top: 8px;
+}
+.con{
+  width:300px;
+  height: 155px;
+  border: 1px #F4F4F4 solid;
+  border-radius: 3px;
+  background-color: #F4F4F4;
+}
+.con h3{
+  margin-top:30px;
+  text-align: center;
+  font-weight: normal;
+}
+.gwcBut{
+  width: 260px;
+  height: 46px;
+  border: 2px solid black;
+  font-size: 16px;
+  margin-top:20px;
+  margin-left: 20px;
+}
+.con-ret{
+  border: 7px solid transparent;
+  border-bottom-color:#F4F4F4; 
+  position: absolute;
+  right: 40px;
+  top:-6px;
+}
+/* -------------------------------------------------- */
+/* 退出登录 */
+.exitLoginBox{
+  position: absolute;
+  top: 37px;
+  right: 107px;
+  width: 130px;
+  height: 100px;
+  line-height:100px;
+  text-align: center;
+  background:#F4F4F4;
+  display:none;
+}
+.exitLogin{
+  line-height:30px;
+  width: 120px;
+  height: 30px;
+  outline: none;
+  border: 2px solid black;
+}
+/* ---------------------------------------------------------- */
+.logoBox{
+  margin-top:45px;
+  width:100%;
+  text-align: center;
+}
+.logoBox img{
+  width: 175px;
+}
+/* ------------------------------------------------------------- */
+.navBox{
+  width: 100%;
+  height: 45px;
+  display:flex;
+  justify-content: center;
+}
+.nav{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav li{
+  height: 45px;
+  line-height: 45px;
+  display:block;
+  float:left;
+  margin:0 30px;
+  box-sizing: border-box;
+}
+/* ---------------------------------------------------------------- */
+.optionBoX{
+  width: 95%;
+  background:rgba(247,247,247,0.97);
+  margin:0 auto;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  padding:20px 0px 5px 0px;
+  display:none;
+  z-index: 111;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size:14px;
+}
+.option{
+  width: 90%;
+}
+.optionOul{
+  width:58%;
+  height: 100%;
+  display:flex;
+  align-items: middle;
+  justify-content:space-around;
+  float: left;
+}
+.optionOul li{
+  list-style: none;
+  display:block;
+  float: left;
+}
+.optionOul p{
+  margin-top:20px;
+}
+.imgBox{
+  width: 38%;
+  float: right;
+}
+.imgBox img{
+  width: 100%;
+  height: 100%;
+}
+/* --------------------------------- */
+.shoppcartBox{
+  width:100%;
+}
+.shoppCart{
+  width: 85%;
+  margin: 0 auto;
+  border: 1 solid gray;
+}
+.shoppcartTop{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+.shoppcartTop a{
+  text-decoration:none;
+  color: black;
+}
+.myShopping{
+  width: 100%;
+  height: 100px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.shoppNum,.lianxi{
+  font-size:24px;
+}
+.lianxi .icon-dianhua,.lianxi .icon-icon-{
+  font-size:20px;
+  margin-right:10px;
+}
+/* -------------------- */
+.cartBox{
+  width: 100%;
+  background-color: #F5F5F5;
+  padding-top:30px;
+}
+.cart{
+  width: 96%;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding:30px 0;
+  border-bottom: 1px solid gray;
+}
+.cartImgBoX{
+    width: 160px;
+  height: 100px;
+  float: left;
+}
+.cartImg{
+  width:100%;
+  height: 100%;
+}
+.shuxing{
+  margin-left: 30px;
+  float: left;
+}
+.shoppName{
+  margin-bottom:10px;
+}
+.shuxing p{
+  font-size: 14px;
+}
+.shuxing p:nth-child(4){
+  margin-top:10px;
+  color:red;
+  cursor: pointer;
+}
+.NumBox{
+  float: left;
+  margin-left: 150px;
+}
+.NumBox button{
+  width: 20px;
+}
+.NumBox input{
+  width: 40px;
+}
+.danprice{
+  float: left;
+  margin-left: 180px;
+}
+.danprice b{
+  font-size: 20px;
+  font-weight: normal;
+}
+.zongprice{
+  float: left;
+  margin-left: 50px;
+}
+.zongprice b{
+  font-size: 20px;
+  font-weight: normal;
+}
+.checkBox{
+  float: right;
+}
+.dancheck{
+  width: 20px;
+  height: 20px;
+  margin-top:20px;
+}
+.settlement{
+  width: 100%;
+  background:#F5F5F5;
+  overflow: hidden;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.inputBox{
+  width: 96%;
+  margin:0 auto;
+}
+.inputBox span{
+  float: right;
+  margin-top:20px;
+}
+.inputBox input{
+  float: right;
+  width: 20px;
+  height: 20px;
+  margin-top:20px;
+}
+.jiesuanBox{
+  clear: right;
+  float: right;
+  margin-top:60px;
+  width: 250px;
+}
+.jiesuanBox p:nth-child(2){
+  font-size: 20px;
+}
+.jiesuanBox button{
+  width: 195px;
+  height: 50px;
+  background:black;
+  color:white;
+  outline:none;
+  border:none;
+  font-size:18px;
+  margin-top:20px;
+}
+/* ---------------------------------------------- */
+.footerBox{
+  width:100%;
+  height: 335px;
+  background:#ededed;
+  display:flex;
+  justify-content:center;
+}
+.foot{
+  width: 85%;
+  height: 280px;
+  margin-top:55px;
+  display:flex;
+  justify-content:space-between;
+}
+.footleft{
+  width: 62%;
+  height: 280px;
+  border-right: 1px solid gray;
+  position: relative;
+}
+.leftUl{
+  width: 100%;
+  display:flex;
+  justify-content:space-around;
+}
+.leftUl li{
+  list-style: none;
+  display: inline-block;
+}
+.leftUl h3{
+  color:#000;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.leftUl p{
+  height:30px;
+  font-size: 12px;
+  line-height: 30px;
+  color:#5a5a5a;
+}
+.Copyright{
+  font-size: 12px;
+  line-height: 30px;
+  color:#5a5a5a;
+  position:absolute;
+  bottom:20px;
+  left: 80px;
+}
+/* ---------------------------- */
+.footright{
+  width: 38%;
+  height: 280px;
+  display: flex;
+  justify-content:center;
+}
+.rightBox{
+  width: 250px;
+}
+.exclusive{
+  margin-top:30px;
+}
+.dingyue p,.exclusive p{
+  font-size: 15px;
+  color: #333;
+  line-height: 30px;
+  width: 100%;
+  font-family: h60s,"Microsoft YaHei";
+}
+.Oinput,.exclusiveInput{
+  width: 250px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:10px;
+}
+.Oinput input,.exclusiveInput input{
+  width: 220px;
+  height: 30px;
+  background:#d9d9d9;
+  outline-style: none;
+  border: none;
+}
+.Oinput a,.exclusiveInput a{
+  display:block;
+  width: 30px;
+  height: 30px;
+  background:#BABABA;
+  font-size: 20px;
+  text-align:center;
+  line-height:30px;
+  font-weight: bolder;
+}

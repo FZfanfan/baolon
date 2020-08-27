@@ -1,0 +1,348 @@
+<!--
+ * @Descripttion: 添加购物车详情页
+ * @version: v1.0.0
+ * @Author: 范钊
+ * @Date: 2020-08-25 16:33:22
+ * @LastEditors: 范钊
+ * @LastEditTime: 2020-08-26 20:25:32
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/addshopping.css">
+  <link rel="stylesheet" type="text/css"  href="../CSS/iconfont.css">
+</head>
+<body onload="load_data()">
+  <div class="backTop">
+    <p>在线客服</p>
+    <p class="upper">&#8593;</p>
+  </div>
+  <!-- -------------------------------------- -->
+  <div class="headerBox">
+    <div class="gwc">
+      <div class="box">
+        <div class="con-ret"></div>
+        <div class="con">
+          <h3>购物车</h3>
+          <button class="gwcBut">查看购物车</button>
+        </div>
+      </div> 
+    </div>
+    <div class="exitLoginBox">
+      <button class="exitLogin">退出登录</button>
+    </div>
+    <!-- --------------------------------- -->
+    <ul class="leftCon">
+      <li>中文</li>
+      <li>|</li>
+      <li>客户服务</li>
+      <li>|</li>
+      <li>附近店铺</li>
+    </ul>
+    <ul class="rightCon">
+      <li class="LRtext"><a href="login.html">登录/注册</a></li>
+      <li class="userShow"></li>
+      <li>
+        <span class="iconfont icon-suo"></span>
+        <span class="num">0</span>
+      </li>
+      <li>
+        <span class="iconfont icon-search"></span>
+      </li>
+    </ul>
+  </div>
+  <div class="logoBox">
+    <a href="#">
+      <img src="../imgs/logo.png" alt="" srcset="">
+    </a>
+  </div>
+  <div class="navBox">
+    <ul class="nav">
+      <li>男士</li>
+      <li>女士</li>
+      <li>儿童</li>
+      <li>定制</li>
+      <li>品牌</li>
+    </ul>
+  </div>
+  <!-- --------------------------------------------------- -->
+  <div class="optionBoX manBoX">
+    <div class="option">
+      <ul class="optionOul">
+        <li>
+          <h4>品类</h4>
+          <p>男士太阳镜</p>
+          <p>男士光学镜</p>
+        </li>
+        <li>
+          <h4>款式</h4>
+          <p>设计款</p>
+          <p>复古款</p>
+          <p>潮流款</p>
+          <p>经典款</p>
+        </li>
+        <li>
+          <h4>材质</h4>
+          <p>其它</p>
+          <p>弹力钢</p>
+          <p>铝镁</p>
+          <p>板材</p>
+          <p>TR</p>
+          <p>β钛</p>
+          <p>混合材质</p>
+          <p>超薄板材</p>
+          <p>超薄板材</p>
+          <p>钛金属</p>
+        </li>
+        <li>
+          <h4>框型</h4>
+          <p>蛤蟆镜</p>
+          <p>猫眼</p>
+          <p>圆形</p>
+          <p>方形</p>
+          <p>多边形</p>
+          <p>方圆</p>
+          <p>矩形</p>
+          <p>D形</p>
+        </li>
+      </ul>
+      <div class="imgBox">
+        <img src="../imgs/a1.jpg" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+<!-- -------------------------------------------------------------- -->
+  <div class="optionBoX womanBox">
+    <div class="option">
+      <ul class="optionOul">
+        <li>
+          <h4>品类</h4>
+          <p>女士太阳镜</p>
+          <p>女士光学镜</p>
+        </li>
+        <li>
+          <h4>款式</h4>
+          <p>设计款</p>
+          <p>复古款</p>
+          <p>潮流款</p>
+          <p>经典款</p>
+        </li>
+        <li>
+          <h4>材质</h4>
+          <p>其它</p>
+          <p>弹力钢</p>
+          <p>铝镁</p>
+          <p>板材</p>
+          <p>TR</p>
+          <p>β钛</p>
+          <p>混合材质</p>
+          <p>超薄板材</p>
+          <p>超薄板材</p>
+          <p>钛金属</p>
+        </li>
+        <li>
+          <h4>框型</h4>
+          <p>蛤蟆镜</p>
+          <p>猫眼</p>
+          <p>圆形</p>
+          <p>方形</p>
+          <p>多边形</p>
+          <p>方圆</p>
+          <p>矩形</p>
+          <p>D形</p>
+        </li>
+      </ul>
+      <div class="imgBox">
+        <img src="../imgs/a2.jpg" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+<!-- ------------------------------------------------------------ -->
+  <div class="optionBoX childrenBox">
+    <div class="option">
+      <ul class="optionOul">
+        <li>
+          <h4>款式</h4>
+          <p>设计款</p>
+          <p>复古款</p>
+          <p>潮流款</p>
+          <p>经典款</p>
+        </li>
+        <li>
+          <h4>材质</h4>
+          <p>板材</p>
+          <p>金属</p>
+          <p>TR</p>
+          <p>板材</p>
+          <p>弹力钢</p>
+          <p>混合材质</p>
+          <p>PPSU</p>
+        </li>
+        <li>
+          <h4>框型</h4>
+          <p>圆形</p>
+          <p>方形</p>
+          <p>D形</p>
+          <p>蛤蟆镜</p>
+          <p>蝶形</p>
+          <p>猫眼</p>
+          <p>矩形</p>
+        </li>
+      </ul>
+      <div class="imgBox">
+        <img src="../imgs/a3.jpg" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+<!-- ---------------------------------------------------- -->
+  <div class="optionBoX brandBox">
+    <div class="option">
+      <ul class="optionOul">
+        <li>
+          <p>品牌故事</p>
+          <p>代言故事</p>
+          <p>精湛工艺</p>
+          <p>品牌动态</p>
+          <p>品牌店铺</p>
+        </li>
+      </ul>
+      <div class="imgBox">
+        <img src="../imgs/a4.jpg" alt="" srcset="">
+      </div>
+    </div>
+  </div>
+  <!-- --------------------------------------------- -->
+  <div class="detailsBox">
+    <div class="details">
+      <div class="detailsTop">首页>男士>男士太阳镜</div>
+      <div class="magnifierBox">
+        <div class="magnifierleft">
+          <div id="small">
+            <img class="small_img" src="../imgs/f1.jpg" alt="">
+            <div id="mask"></div>
+          </div>
+          <div id="big">
+            <img class="big_img" src="../imgs/f1.jpg" alt="">
+          </div>
+        </div>
+        <div class="magnifierright">
+          <b class="bl">BL3019 C10</b>
+          <div class="jkBox">
+            <h3 class="JKuang">镜框</h3>
+            <p class="CZhi">镜框材质|板材</p>
+          </div>
+          <div class="jPBox">
+            <h3 class="Jpian">镜片</h3>
+            <p class="jcolor">蓝灰色全色</p>
+          </div>
+          <div class="flImgBox">
+            <p>颜色</p>
+            <ul class="flImg">
+              <li><img src="../imgs/f1.jpg" alt=""></li>
+              <li><img src="../imgs/f2.jpg" alt=""></li>
+              <li><img src="../imgs/f3.jpg" alt=""></li>
+              <li><img src="../imgs/f4.jpg" alt=""></li>
+            </ul>
+          </div>
+          <div class="heji">
+            <p>合计</p>
+            <b class="rmb">RMB&nbsp;<span class="price">868</span></b>
+          </div>
+        </div>
+      </div>
+      <div class="detailsbottom">
+        <button class="addGwc">加入购物</button>
+        <div class="xialaBox">
+          <div class="liNian">
+            <h3>设计理念</h3>
+            <b class="iconfont icon-xiala2"></b>
+            <b class="iconfont icon-toTop"></b>
+          </div>
+          <div class="liNianX">光影渐变 炫彩型格</div>
+          <div class="caizhi">
+            <h3>材质</h3>
+            <b class="iconfont icon-xiala2"></b>
+            <b class="iconfont icon-toTop"></b>
+          </div>
+          <div class="caizhiX">
+            <p>镜框材质：其它</p>
+            <p>镜片：葡萄紫色</p>
+          </div>
+          <div class="canshu">
+            <h3>参数</h3>
+            <b class="iconfont icon-xiala2"></b>
+            <b class="iconfont icon-toTop"></b>
+          </div>
+          <div class="canshuX">
+            <p>镜框长度60mm</p>
+            <p>中梁长度14mm</p>
+            <p>镜腿长度148mm</p>
+          </div>
+        </div>
+      </div>
+      <div class="iconBox">
+        <div class="icon">
+           <span class="iconfont icon-weixin-footer"></span>
+          <span class="iconfont icon-weibo"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------------- -->
+  <div class="footerBox">
+    <div class="foot">
+      <div class="footleft">
+        <ul class="leftUl">
+          <li>
+            <h3>需要帮助</h3>
+            <p>联系我们</p>
+            <p>常见问题</p>
+            <p>保养与维修</p>
+          </li>
+          <li>
+            <h3>关于公司</h3>
+            <p>企业信息</p>
+            <p>细则与条款</p>
+            <p>隐私与COOKIE</p>
+          </li>
+          <li>
+            <h3>关注BOLON</h3>
+            <p>
+              <span class="iconfont icon-weixin-footer"></span>
+              微信
+            </p>
+            <p>
+              <span class="iconfont icon-weibo"></span>
+              微博
+            </p>
+          </li>
+        </ul>
+        <p class="Copyright">Copyright 2015 BOLON. All Rights Reserved 闽ICP备11001899号-3</p>
+      </div>
+      <div class="footright">
+        <div class="rightBox">
+          <div class="dingyue">
+            <p>订阅 BOLON 电子资讯</p>
+            <div class="Oinput">
+              <input type="text" placeholder="电子邮件地址">
+              <a>></a>
+            </div>
+          </div>
+          <div class="exclusive">
+            <p>专卖店查询</p>
+            <div class="exclusiveInput">
+              <input type="text" placeholder="城市，国家">
+              <a>></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/addshopping.js"></script>
